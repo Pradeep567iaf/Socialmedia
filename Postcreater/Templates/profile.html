@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}</title>About</title>{% endblock title %}
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+<div style="margin-top: 80px; width: 900px; margin: 80px auto;">
+   <h1> Welcome to the profile page user . {{request.user}}</h1>
+</div>
+{% endblock content %}
